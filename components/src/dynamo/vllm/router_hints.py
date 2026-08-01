@@ -107,7 +107,7 @@ def enable_router_hint_support(
     runtime_config.set_engine_specific(ROUTER_HINT_RUNTIME_CAPABILITY_KEY, "true")
     runtime_config.set_engine_specific(
         ROUTER_HINT_WORKER_TYPE_RUNTIME_KEY,
-        router_hint_worker_type,
+        json.dumps(router_hint_worker_type),
     )
     runtime_config.set_engine_specific(
         ROUTER_HINT_SOURCE_CONTROL_ENDPOINTS_RUNTIME_KEY,
